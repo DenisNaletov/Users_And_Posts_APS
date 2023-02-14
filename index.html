@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<ol class="nav" id="navigator">
+    <li class="nav-item" id="btn_form_user">
+        <label class="nav-link">Create User</label>
+    </li>
+    <li class="nav-item" id="btn_form_add_post">
+        <label class="nav-link">Add Post</label>
+    </li>
+    <li class="nav-item" id="btn_form_get_posts">
+        <label class="nav-link">Get Posts</label>
+    </li>
+    <li class="nav-item" id="btn_user_list">
+        <label class="nav-link">User List</label>
+    </li>
+</ol>
+
+<div class="container">
+    <form action="" class="card" id="form_user">
+        <h3 class="card-header">User Form</h3>
+        <label for="id_input" class="form-label">Enter User ID</label>
+        <input type="number" class="form-control" id="id_input" name="id">
+
+        <label for="name_input" class="form-label">Enter User Name</label>
+        <input type="text" class="form-control" id="name_input" name="name">
+
+        <label for="nick_input" class="form-label">Enter User Nickname</label>
+        <input type="text" class="form-control" id="nick_input" name="username">
+
+        <label for="email_input" class="form-label">Enter User Email</label>
+        <input type="email" class="form-control" id="email_input" name="email">
+        <label for="phone_input" class="form-label">Enter User Phone</label>
+        <input type="text" class="form-control" id="phone_input" name="phone">
+        <br>
+        <button type="submit" class="btn btn-success">Send User</button>
+    </form>
+    <form action="" class="card hidden" id="form_add_post">
+        <h3 class="card-header">Add Post</h3>
+        <label for="id_post_input" class="form-label">Enter User ID</label>
+        <input type="number" class="form-control" id="id_post_input" name="userId">
+
+        <label for="post_title" class="form-label">Enter post title</label>
+        <textarea name="title" id="post_title" class="form-control"></textarea>
+
+        <label for="post_body" class="form-label">Enter post body</label>
+        <textarea name="body" id="post_body" class="form-control"></textarea>
+        <br>
+        <button type="submit" class="btn btn-success">Send Post</button>
+
+    </form>
+    <form action="" class="card hidden" id="form_get_posts">
+        <h3 class="card-header">Get user's posts</h3>
+        <label for="id_post_input" class="form-label">Enter User ID</label>
+        <input type="number" class="form-control" id="id_posts" name="id">
+        <br>
+        <button type="submit" class="btn btn-success">Get Posts</button>
+    </form>
+    <ul class="card" id="list">
+
+    </ul>
+</div>
+
+
+<script src="services/controller.js"></script>
+<script src="services/toolbox.js"></script>
+<script src="dto/user.js"></script>
+<script src="dto/users.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

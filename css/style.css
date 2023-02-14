@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    background-color: #badbcc;
+}
+.card{
+    width: 50%;
+    margin: 10px 0 10px 0;
+}
+#form_user, #form_add_post, #form_get_posts {
+    background-color: #badbcc;
+    padding: 0 0 20px 0;
+
+}
+.form-control, .form-label, .btn-success{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hidden{
+    display: none;
+}
+.nav-link{
+    cursor: pointer;
+}
+.nav{
+    justify-content: center;
+}
